@@ -2,12 +2,31 @@
 layout: default
 title: Welcome to stone9981
 ---
-
+{% for post in site.posts %}
+<div class="app-item">
+	<div class="app-logo">
+		<img src="{{post.AppImg}}">
+	</div>
+	<div class="app-content">
+		<p class="app-title">{{post.title}}</p>
+		<br>
+		<p class="app-require">{{post.version}}-{{post.date|date_to_string}}</p>
+		<p class="app-require">
+			[
+		<a href="{{post.AppLink}}" target="_blank">more detail</a>
+			]
+		</p>
+	</div>
+	<div class="clear"></div>
+</div>
+{% endfor %}
+<!--
 <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><a href="{{post.AppLink}}"><img src="{{post.AppImg}}"><a/></li>
     {% endfor %}
   </ul>
 </div>
+-->

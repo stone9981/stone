@@ -1,0 +1,135 @@
+/*----------------------------------------------------------------------------- 
+ukees.com by kyle@ukees.com
+Copyright (c) 2007 ukees.com.
+All rights reserved, please don't steal.
+-----------------------------------------------------------------------------*/
+
+* { 
+    margin: 0px; 
+    padding: 0px; 
+}
+
+body {
+    color: black;
+    background: white;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    z-index: 10000;
+}
+
+img {
+    border: 0px;
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+}
+
+a {
+    color: #6B9F1F;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*----------------------------------------------
+ * Layouts
+ *--------------------------------------------*/
+#container {
+    width: 450px;
+    margin: 0px auto;
+    position: relative;
+    text-align: left;
+}
+
+#header {
+    color: #0000FF;
+	text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+	padding: 10px 0px 10px 0px;
+}
+
+#content {
+    width: 100%;
+}
+
+#footer {
+    text-align: center;
+}
+
+/* content */
+
+.clear {
+    clear: both;
+}
+
+
+
+/* app item */
+
+#app-list {
+    padding: 5px;
+}
+
+.app-item-topline {
+    border-bottom: 1px dotted gray;
+}
+
+.app-item {
+    padding: 2px 0px;
+    border-bottom: 1px dotted gray;
+}
+
+.app-logo {
+    float:left;
+    overflow: auto;
+	width : 100px;
+	height: 100px;
+	padding: 4px;
+}
+
+.app-content {
+    float:right;
+    overflow: hidden;
+    width: 228px; 
+	min-height: 72px;
+}
+
+.app-title {
+    padding: 2px;
+	text-align: center;
+    font-weight: bold;
+    display: block;
+}
+
+.app-desc {
+    padding: 2px;
+    display: block;
+	min-height: 30px;
+}
+.app-require {
+    padding: 2px;
+    font-size: 10px;
+	text-align: right;
+	color: #0080FF;
+}
+/* tools */
+
+.clear {
+    clear: both;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+.vertline {
+    padding: 0px 5px;
+}
